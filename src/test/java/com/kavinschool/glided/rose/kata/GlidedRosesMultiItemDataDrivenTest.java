@@ -25,7 +25,7 @@ public class GlidedRosesMultiItemDataDrivenTest {
         expectedItemsDay[0] = new Item[]{
                 new Item("Aged Brie", 1, 1), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 50), //
-                new Item("Sulfuras, Hand of Ragnaros", -1, 48),
+                new Item("Sulfuras, Hand of Ragnaros", -1, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 14, 21),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 9, 50),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 4, 50)
@@ -34,7 +34,7 @@ public class GlidedRosesMultiItemDataDrivenTest {
         expectedItemsDay[1] = new Item[]{
                 new Item("Aged Brie", 0, 2), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 50), //
-                new Item("Sulfuras, Hand of Ragnaros", -1, 47),
+                new Item("Sulfuras, Hand of Ragnaros", -1, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 13, 22),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 8, 50),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 3, 50)
@@ -47,6 +47,7 @@ public class GlidedRosesMultiItemDataDrivenTest {
         GildedRose app = new GildedRose(items);
         int days = 2;
         for (int day = 0; day < days; day++) {
+            System.out.println("day="+(day+1));
             app.updateQuality();
             for (int item = 0; item < items.length; item++) {
                 String expectedSingleItem = expectedItemsDay[day][item].name + ", " + expectedItemsDay[day][item].sellIn + ", " + expectedItemsDay[day][item].quality;
