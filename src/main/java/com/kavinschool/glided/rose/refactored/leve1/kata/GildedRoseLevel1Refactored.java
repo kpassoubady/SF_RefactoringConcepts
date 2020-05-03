@@ -1,12 +1,14 @@
-package com.kavinschool.glided.rose.kata;
+package com.kavinschool.glided.rose.refactored.leve1.kata;
 
-public class GildedRose {
+import com.kavinschool.glided.rose.kata.Item;
+
+public class GildedRoseLevel1Refactored {
     public static final String PASSES = "Backstage passes to a TAFKAL80ETC concert";
     public static final String RAGNAROS = "Sulfuras, Hand of Ragnaros";
     public static final String AGED_BRIE = "Aged Brie";
     Item[] items;
 
-    public GildedRose(Item[] items) {
+    public GildedRoseLevel1Refactored(Item[] items) {
         this.items = items;
     }
 
