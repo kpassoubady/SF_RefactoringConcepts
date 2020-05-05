@@ -25,5 +25,7 @@ Just for clarification, an item can never have its Quality increase above 50, ho
 
 ## Constraints
 According to the Kata, it is possible to change the `updateQuality()` method in GildedRose class or to add more code to the application. The only 2 constraints are:
-do not alter the `Item class`
-do not alter the `Items property`.
+
+* do not alter the `Item class`
+
+* do not alter the `Items property`.
