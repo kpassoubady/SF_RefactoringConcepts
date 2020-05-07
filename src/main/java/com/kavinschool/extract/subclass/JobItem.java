@@ -1,10 +1,10 @@
 package com.kavinschool.extract.subclass;
 
 public class JobItem {
-    private int unitPrice;
-    private int quantity;
-    private Employee employee;
-    private boolean isLabor;
+    private final int unitPrice;
+    private final int quantity;
+    private final Employee employee;
+    private final boolean isLabor;
 
     public JobItem(int unitPrice, int quantity, Employee employee, boolean isLabor) {
         this.unitPrice = unitPrice;

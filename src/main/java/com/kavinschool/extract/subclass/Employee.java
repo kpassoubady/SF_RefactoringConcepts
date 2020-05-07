@@ -1,7 +1,7 @@
 package com.kavinschool.extract.subclass;
 
 public class Employee {
-    private int rate;
+    private final int rate;
 
     public Employee(int rate) {
         this.rate = rate;

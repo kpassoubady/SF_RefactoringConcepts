@@ -51,7 +51,7 @@ public class GlidedRosesMultiItemDataDrivenTest {
             app.updateQuality();
             for (int item = 0; item < items.length; item++) {
                 String expectedSingleItem = expectedItemsDay[day][item].name + ", " + expectedItemsDay[day][item].sellIn + ", " + expectedItemsDay[day][item].quality;
-                assertEquals(expectedSingleItem,app.items[item].toString());
+                //assertEquals(expectedSingleItem,app.items[item].toString());
                 assertEquals(expectedItemsDay[day][item].name, app.items[item].name);
                 assertEquals(expectedItemsDay[day][item].sellIn, app.items[item].sellIn);
                 assertEquals(expectedItemsDay[day][item].quality, app.items[item].quality);

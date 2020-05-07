@@ -68,6 +68,7 @@ class GildedRoseLevel2Refactored {
     }
 
     private class Legendary extends ItemCategory {
+        @Override
         protected void updateExpired(Item item) {
         }
 

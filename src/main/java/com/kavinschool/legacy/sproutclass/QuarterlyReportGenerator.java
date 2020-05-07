@@ -3,8 +3,8 @@ package com.kavinschool.legacy.sproutclass;
 import java.util.Date;
 
 public class QuarterlyReportGenerator {
-    private Date beginDate;
-    private Date endDate;
+    private final Date beginDate;
+    private final Date endDate;
 
     private QuarterlyReportGenerator() throws HardToInstanciateInATestException {
         throw new HardToInstanciateInATestException();
@@ -25,7 +25,7 @@ public class QuarterlyReportGenerator {
                 pageText += "<td>" + it.department + "</td>";
                 pageText += "<td>" + it.manager + "</td>";
                 String buffer = String.format("<td>$%d</td>", it.netProfit / 100);
-                pageText += new String(buffer);
+                pageText += buffer;
                 buffer = buffer + String.format("<td>$%d</td>", it.operatingExpense / 100);
                 pageText += buffer;
                 pageText += "</tr>";

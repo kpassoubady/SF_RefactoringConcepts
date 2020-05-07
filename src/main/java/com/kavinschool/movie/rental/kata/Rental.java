@@ -1,8 +1,8 @@
 package com.kavinschool.movie.rental.kata;
 
 public class Rental {
-    private Movie movie;
-    private int dayRented;
+    private final Movie movie;
+    private final int dayRented;
 
     public Rental(Movie movie, int dayRented) {
         this.movie = movie;

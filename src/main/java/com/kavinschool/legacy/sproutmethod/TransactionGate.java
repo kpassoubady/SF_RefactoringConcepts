@@ -8,8 +8,8 @@ public class TransactionGate
     private TransactionBundle transactionBundle;
 
     public void postEntries(List entries) {
-        for (Iterator it = entries.iterator(); it.hasNext(); ) {
-            Entry entry = (Entry) it.next();
+        for (Object o : entries) {
+            Entry entry = (Entry) o;
             entry.postDate();
         }
         transactionBundle.getListManager().add(entries);

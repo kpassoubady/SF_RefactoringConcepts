@@ -9,10 +9,9 @@ public class BadTransactionGate {
 
     public void postEntries(List entries) {
         List entriesToAdd = new LinkedList();
-        for (Iterator it = entries.iterator(); it.hasNext(); ) {
-            Entry entry = (Entry) it.next();
-            if(! transactionBundle.getListManager().hasEntry(entry))
-            {
+        for (Object o : entries) {
+            Entry entry = (Entry) o;
+            if (!transactionBundle.getListManager().hasEntry(entry)) {
                 entry.postDate();
                 entriesToAdd.add(entry);
             }
